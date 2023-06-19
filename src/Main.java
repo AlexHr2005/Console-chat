@@ -1,3 +1,4 @@
+import org.w3c.dom.ls.LSResourceResolver;
 import server.MyServer;
 
 import java.io.IOException;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        MyServer.run();
+        MyServer server = new MyServer();
+        server.run();
     }
 }
